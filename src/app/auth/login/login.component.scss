@@ -1,0 +1,66 @@
+.login {
+  .logo {
+    margin: 60px auto 20px auto;
+    padding: 15px;
+    text-align: center;
+    border-radius: 0 !important;
+    box-sizing: border-box;
+  }
+  .content {
+    background: url('./../../../assets/login/bg-white-lock.png') repeat;
+    width: 360px;
+    margin: 0 auto;
+    padding: 20px 30px 15px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    h3, h4 {
+      color: #EEE;
+    }
+    p, label {
+      color: #FFF
+    }
+    .msg {
+      color: #ff9298;
+    }
+    .login-form, .forget-form {
+      padding: 0;
+      margin: 0;
+    }
+    .form-control {
+      background-color: #FFF;
+    }
+    .forget-form {
+      display: none;
+    }
+    .form-title {
+      font-weight: 300;
+      margin-bottom: 25px;
+    }
+    .form-actions {
+      background-color: transparent;
+      clear: both;
+      border: 0;
+      padding: 0 30px 25px 30px;
+      margin-left: -30px;
+      margin-right: -30px;
+      .checkbox {
+        margin-left: 0;
+        padding-left: 0;
+        margin-top: 8px;
+        display: inline-block;
+      }
+      .btn {
+        margin-top: 1px;
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    color: #eee;
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
