@@ -1,4 +1,4 @@
-// import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material';
@@ -6,6 +6,7 @@ import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/materi
 import { AppRouterModule } from './app-router/app-router.module';
 import { LayoutModule } from './layout/layout.module';
 import { AuthModule } from './auth/auth.module';
+import { BaseModule } from './base/base.module';
 
 import { AppComponent } from './app.component';
 
@@ -14,12 +15,13 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    // BrowserModule,
+    BrowserModule,
     BrowserAnimationsModule,
     /* self module */
     AppRouterModule,
     LayoutModule,
-    AuthModule
+    AuthModule,
+    BaseModule
   ],
   providers: [
     {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher}

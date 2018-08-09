@@ -1,0 +1,9 @@
+mat-sidenav-container {
+  position: absolute;
+  height: calc(100% - 64px);
+  width: 100%;
+}
+
+mat-sidenav {
+  width: 200px;
+}

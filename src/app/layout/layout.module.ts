@@ -8,6 +8,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LayoutComponent } from './layout/layout.component';
+import { SettingsService } from '../core/settings.service';
 
 @NgModule({
   imports: [
@@ -26,6 +27,9 @@ import { LayoutComponent } from './layout/layout.component';
     HeaderComponent,
     FooterComponent,
     LayoutComponent
+  ],
+  providers: [
+    SettingsService
   ]
 })
 export class LayoutModule { }

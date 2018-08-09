@@ -1,3 +1,16 @@
-<mat-sidenav #appSideNav mode="side" [opened]="show">
-  我是左邊選單
-</mat-sidenav>
+<mat-nav-list>
+<!--  <mat-menu mat-list-item>
+    <button mat-menu-item [matMenuTriggerFor]="subMenu"></button>
+  </mat-menu>
+  <mat-menu #subMenu="matMenu">
+    <button mat-menu-item routerLink="/base/self-tenant">我的企业</button>
+    <button mat-menu-item routerLink="/base/dict">系统字典</button>
+  </mat-menu>-->
+
+  <mat-list-item routerLink="/base/self-tenant">
+    我的企业
+  </mat-list-item>
+  <mat-list-item routerLink="/base/dict">
+    系统字典
+  </mat-list-item>
+</mat-nav-list>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {SettingsService} from '../../core/settings.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,14 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  show = true;
-  constructor() { }
+  constructor(private settings: SettingsService) { }
 
   ngOnInit() {
-  }
-
-  toggle() {
-    this.show = !this.show;
   }
 
 }

@@ -1,12 +1,11 @@
-<app-header></app-header>
-
+<mat-toolbar>
+  <app-header></app-header>
+</mat-toolbar>
 <mat-sidenav-container>
-  <mat-sidenav #appSideNav mode="side" [opened]="showSidebar">
-    我是左邊選單
+  <mat-sidenav mode="side" [opened]="!settings.collapsed">
+    <app-sidebar></app-sidebar>
   </mat-sidenav>
   <mat-sidenav-content>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
-
-<app-footer></app-footer>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SettingsService } from '../../core/settings.service';
 
 @Component({
   selector: 'app-layout',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
 
-  constructor() { }
+  constructor(public settings: SettingsService) { }
 
   ngOnInit() {
   }
 
+  // get collapsed() {
+  //   return this.settings.collapsed;
+  // }
 }

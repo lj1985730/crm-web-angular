@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {SettingsService} from '../../core/settings.service';
 
 @Component({
   selector: 'app-header',
@@ -7,11 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private settings: SettingsService) { }
 
   ngOnInit() {
   }
 
   toggleSidebar() {
+    this.settings.collapsed = !this.settings.collapsed;
   }
 }
